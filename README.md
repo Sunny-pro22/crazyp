@@ -2,7 +2,7 @@ LIve link=https://crazyp-3.onrender.com/game
 
 for locally setup;
 
-git clone https://github.com/SUnny-pro-22/crazyp
+git clone https://github.com/Sunny-pro-22/crazyp
 cd crazyp
 
 instal dependecnies 
