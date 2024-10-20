@@ -1,4 +1,4 @@
-LIve link=https://crazyp-3.onrender.com/game
+LIve link=https://crazyp-3.onrender.com/
 
 for locally setup;
 
