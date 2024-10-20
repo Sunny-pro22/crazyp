@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview --port 3000",
-    "start": "serve -s dist",  
-
+    "start": "serve -s dist"  ,
     "build": "vite build",
-    "lint": "eslint .",
-   
+    "lint": "eslint ."
+    
   },
   "dependencies": {
     "@react-three/cannon": "^6.6.0",
