@@ -29,6 +29,7 @@ export default function SelectCars() {
         if (!localStorage.getItem("userMoney")) {
             localStorage.setItem("userMoney", userMoney);
         }
+        setUserMoney(parseInt(localStorage.getItem("userMoney")));
     }, [userMoney]);
 
     const handleCarHover = (carId, event) => {
@@ -40,7 +41,6 @@ export default function SelectCars() {
         const { clientX, clientY } = event;
         setModalPosition({ top: clientY - 150, left: clientX - 50 });
     };
-
     const handleCarLeave = () => {
         hoverTimeout.current = setTimeout(() => {
             setShowModal(false);

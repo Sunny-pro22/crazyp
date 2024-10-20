@@ -1,0 +1,83 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: linear-gradient(145deg, #6a82fb, #fc5c7d);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 60px #5c5c5c, -20px -20px 60px #ffffff;
+    text-align: center;
+    animation: pop 0.3s ease-in-out;
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .modal-score {
+    font-size: 20px;
+    color: #fffae6;
+    margin: 10px 0;
+  }
+  
+  .name-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-button,
+  .exit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .save-button {
+    background-color: #3be8ab;
+    color: #000;
+  }
+  
+  .exit-button {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .save-button:hover {
+    background-color: #32d89a;
+  }
+  
+  .exit-button:hover {
+    background-color: #e53935;
+  }
+  

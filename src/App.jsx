@@ -8,12 +8,10 @@ export default function App() {
   const [userMoney, setUserMoney] = useState(0); 
 
   useEffect(() => {
-    if (!localStorage.getItem("userMoney")) {
-      localStorage.setItem("userMoney", userMoney);
-    }
     const storedMoney = localStorage.getItem("userMoney");
     if (storedMoney) {
       setUserMoney(parseInt(storedMoney));
+      
     }
   }, []);
 
@@ -21,6 +19,8 @@ export default function App() {
     if (!localStorage.getItem("userMoney")) {
       localStorage.setItem("userMoney", userMoney);
     }
+    
+  
   }, [userMoney]);
 
   return (
