@@ -261,7 +261,7 @@ const Main = () => {
   const [alerted, setAlerted] = useState(false);
   const [gameOver, setGameOver] = useState(false);
   const [isGameStarted, setIsGameStarted] = useState(false); 
-  const [countdown, setCountdown] = useState(5); 
+  const [countdown, setCountdown] = useState(15); 
   const [userMoney, setUserMoney] = useState(); 
   useEffect(() => {
    
@@ -341,7 +341,7 @@ const Main = () => {
         {createRailing2([80, 0.5, 0.2], [0.1, 1.3, 137],[0,-Math.PI/3,0])}
         {createRailing2([43, 0.5, -133.5], [45, 1.3, 0.1],[0,0,Math.PI/8])}
         {createRailing2([43, 0.5, -126.5], [45, 1.3, 0.1],[0,0,Math.PI/8])}
-        {createRailing2([135.8, 0.5, -45.5], [0.1, 2, 70],[Math.PI/13.4,0,0])}
+        {createRailing2([135.8, 0.5, -45.5], [0.1, 0.5, 70],[Math.PI/13.4,0,0])}
         {createRailing2([143.8, 0.5, -42.5], [0.1, 1.3, 70],[Math.PI/13.4,0,0])}
         {createRailing2([45, 0.5, 100], [0.1, 1.3, 140],[0,-Math.PI/6,0])}
         {createRailing2([45, 0.5, 82], [0.1, 1.3, 100],[0,-Math.PI/6,0])}
@@ -386,7 +386,7 @@ const Main = () => {
         <Tunnel position={[0, -1.2, 72]} scale={[20, 50, 50]} rotation={[0, -Math.PI/2-0.1, 0]} />
          <FollowCamera carRef={carRef} /> 
       </Physics>
-    </Canvas></>
+*    </Canvas></>
   );
 };
 
