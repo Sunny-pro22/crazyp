@@ -1,0 +1,66 @@
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: Red;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  .header {
+    background-color: #333; /* Dark header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 150px; /* Space from header */
+  }
+  
+  .start-button, .nav-button {
+    padding: 15px 30px; /* Button padding */
+    font-size: 18px; /* Larger text */
+    color: white; /* Button text color */
+    background-color: #007bff; /* Primary button color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .start-button:hover, .nav-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .nav-button {
+    background-color: #6c757d; /* Secondary button color */
+  }
+  
+  .nav-button:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+  }
+  
